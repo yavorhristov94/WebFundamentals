@@ -30,7 +30,12 @@ public void doGet(HttpServletRequest req, HttpServletResponse resp)
                 "<name>Hello %s</name>"+
                 "<product>%s</product>" +
                 "</application>", name, appName);
-    }else resp.getWriter().write("Hello World");
+    }else {
+        throw new ServletException("A name should be entered");
+        //To handle this, we specify in the web.xml
+
+//        resp.getWriter().write("Hello World");
+    }
     }
 
 

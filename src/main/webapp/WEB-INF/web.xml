@@ -12,12 +12,21 @@
 
     <servlet-mapping>
         <servlet-name>Hello</servlet-name>
+        <url-pattern>/other</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-class>com.twinray.ControllerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ControllerServlet</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>Hello</servlet-name>
-        <url-pattern>/other</url-pattern>
-    </servlet-mapping>
+    <error-page>
+        <location>/WEB-INF/errorpage.jsp</location>
+    </error-page>
 
 </web-app>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-B" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee">
+
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>com.twinray.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>ProductName</param-name>
+            <param-value>Another Product Name</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/other</url-pattern>
+    </servlet-mapping>
+
+</web-app>

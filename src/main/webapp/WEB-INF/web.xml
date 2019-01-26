@@ -29,4 +29,14 @@
         <location>/WEB-INF/errorpage.jsp</location>
     </error-page>
 
+    <filter>
+        <filter-name></filter-name>
+        <filter-class></filter-class>
+        <init-param></init-param>
+    </filter>
+
+    <filter-mapping>
+
+    </filter-mapping>
+
 </web-app>

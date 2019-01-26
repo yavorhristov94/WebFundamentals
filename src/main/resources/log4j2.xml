@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<Configuration status="debug" name="LoggingConfig">
+    <Appenders>
+        <File name="File" fileNAme="${sys:catalina.home}/logs/application.log">
+
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
